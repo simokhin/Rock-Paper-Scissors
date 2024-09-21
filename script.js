@@ -4,30 +4,35 @@ let computerScore = 0;
 let humanSelect = getHumanChoice();
 let computerSelect = getComputerChoice(); 
 
-function playGame() {
-    playRound
-}
+playGame();
 
 function playGame() {
-    if (humanScore >= 5 && computerScore < 5){
-        return console.log("You win the game");
+    playRound(humanSelect, computerSelect);
+
+    humanSelect = getHumanChoice();
+    computerSelect = getComputerChoice(); 
+    playRound(humanSelect, computerSelect);
+
+    humanSelect = getHumanChoice();
+    computerSelect = getComputerChoice(); 
+    playRound(humanSelect, computerSelect);
+
+    humanSelect = getHumanChoice();
+    computerSelect = getComputerChoice(); 
+    playRound(humanSelect, computerSelect);
+
+    humanSelect = getHumanChoice();
+    computerSelect = getComputerChoice(); 
+    playRound(humanSelect, computerSelect);
+
+    if (humanScore > computerScore) {
+        return console.log("You win the game! (Ты победил!)");
     }
-    else if (computerScore >= 5 && humanScore < 5){
-        return console.log("You lost the game.")
+    else if (computerScore > humanScore) {
+        return console.log("You lost. (Ты проиграл...)");
     }
     else {
-        let round = playRound(humanSelect, computerSelect);
-            if (round === "You win.") {
-                humanScore = humanScore + 1;
-                return console.log(humanScore, computerScore)
-            }
-            else if (round === "You lost.") {
-                computerScore = computerScore +1;
-                return console.log(humanScore, computerScore);
-            }
-            else {
-                return console.log(humanScore, computerScore);
-            }
+        return console.log("The game ended in a draw. (Игра закончилась ничьей)")
     }
 }
 
@@ -45,7 +50,7 @@ function getComputerChoice() {
 }
 
 function getHumanChoice() {
-    let choice = prompt("What is your choice?").toLowerCase();
+    let choice = prompt("What is your choice? (Rock, Paper, Scissors) (Выбирай: камень, ножницы или бумага)").toLowerCase();
     if (choice === "rock") {
         return "rock";
     }
