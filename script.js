@@ -37,11 +37,11 @@ function playGame() {
 }
 
 function getComputerChoice() {
-    a = Math.floor(Math.random() * 100);
-    if (a <= 33) {
+    number = Math.floor(Math.random() * 100);
+    if (number <= 33) {
         return "rock";
     }
-    else if (a <= 66) {
+    else if (number <= 66) {
         return "paper";
     }
     else {
@@ -72,40 +72,40 @@ function playRound(humanChoice, computerChoice) {
     if (humanChoice === "rock") {
         if (computerChoice === "scissors") {
             humanScore = humanScore + 1;
-            return console.log("You win. (Ты победил в этом раунде)")
+            return console.log("You win. (Ты победил в этом раунде)");
         }
         else if (computerChoice === "rock") {
-            return console.log("Draw. (Ничья в этом раунде)")
+            return console.log("Draw. (Ничья в этом раунде)");
         }
         else {
             computerScore = computerScore + 1;
-            return console.log("You lost. (Ты проиграл в этом раунде)")
+            return console.log("You lost. (Ты проиграл в этом раунде)");
         }
     }
     else if (humanChoice === "paper") {
         if (computerChoice === "scissors") {
             computerScore = computerScore + 1;
-            return console.log("You lost. (Ты проиграл в этом раунде)")
+            return console.log("You lost. (Ты проиграл в этом раунде)");
         }
         else if (computerChoice === "paper") {
-            return console.log("Draw. (Ничья в этом раунде)")
+            return console.log("Draw. (Ничья в этом раунде)");
         }
         else {
             humanScore = humanScore + 1;
-            return console.log("You win. (Ты победил в этом раунде)")
+            return console.log("You win. (Ты победил в этом раунде)");
         }
     }
     else {
         if (computerChoice === "paper") {
             humanScore = humanScore + 1;
-            return console.log("You win. (Ты победил в этом раунде)")
+            return console.log("You win. (Ты победил в этом раунде)");
         }
         else if (computerChoice === "scissors") {
-            return console.log("Draw. (Ничья в этом раунде)")
+            return console.log("Draw. (Ничья в этом раунде)");
         }
         else {
             computerScore = computerScore + 1;
-            return console.log("You lost. (Ты проиграл в этом раунде)")
+            return console.log("You lost. (Ты проиграл в этом раунде)");
         }
     }
 }
