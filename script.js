@@ -37,11 +37,11 @@ function playGame() {
 }
 
 function getComputerChoice() {
-    number = Math.floor(Math.random() * 100);
-    if (number <= 33) {
+    number = Math.random();
+    if (number <= 0.33) {
         return "rock";
     }
-    else if (number <= 66) {
+    else if (number <= 0.66) {
         return "paper";
     }
     else {
