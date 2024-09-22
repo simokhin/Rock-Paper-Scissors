@@ -6,6 +6,7 @@ let btnRock = document.querySelector("#rock");
 let btnPaper = document.querySelector("#paper");
 let btnScissors = document.querySelector("#scissors");
 let score = document.querySelector("#score");
+let results = document.querySelector(".results")
 let result = document.querySelector("#result");
 let whichRound = document.querySelector("#which-round");
 
@@ -116,7 +117,6 @@ function stopGame(){
         }
         else {
             result.textContent = "The game ended in a draw. (Игра закончилась ничьей)"
-
             return console.log("The game ended in a draw. (Игра закончилась ничьей)")
         }
     }

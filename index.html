@@ -4,24 +4,46 @@
     <head>
         <meta charset="UTF-8">
         <title>Rock Paper Scissors</title>
+        <link rel="stylesheet" href="./style.css">
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
         <script src="./script.js" defer></script>
     </head>
 
     <body>
 
-        <h1>Rock, Paper, Scissors (Камень, ножницы, бумага)</h1>
-        <p>Win, who get 5 points first! (Победит тот, кто первый наберет 5 очков)</p>
+        <header>
+            <div class="title-back">
+            <div class="title">Rock, Paper, Scissors!</div>   
+            </div>
+            
+        </header>
+        <div class="content">
 
-        <button id="rock">Rock (камень)</button>
-        <button id="paper">Paper (бумага)</button>
-        <button id="scissors">Scissors (ножницы)</button>
+            <p class="desc">
+                Win, who get <strong>5 points</strong> first! (Победит тот, кто первый наберет <strong>5 очков</strong>)<br>
+                Click to start! (Нажми, чтобы начать!)
+            </p>
+            
 
-        <div id="results">
-            <p id="which-round"></p>
-            <p id="round-result"></p>
-            <p id="score"></p>
-            <p id="result"></p>
+            <div class="buttons">
+                <button id="rock">&#129704</button>
+                <button id="paper">&#128221</button>
+                <button id="scissors">&#9986</button>
+            </div>
+
+
+            <div id="results">
+                <p id="which-round"></p>
+                <p id="round-result"></p>
+                <p id="score"></p>
+                <p id="result"></p>
+            </div>            
         </div>
+
 
     </body>
 
