@@ -28,10 +28,15 @@ header {
     font-size: 40px;
     font-weight: 500;
     color: white;
+    cursor: default;
+}
+
+.title:hover {
+    opacity: 90%;
 }
 
 .content {
-    height: 80vh;
+    height: 70vh;
     background-color: whitesmoke;
     display: flex;
     flex-direction: column;
@@ -65,7 +70,9 @@ button {
 button:hover {
     background-color: #C96868;
     border: 2px solid white;
+    cursor: pointer;
 }
+
 
 #results {
     padding: 10px;
@@ -78,3 +85,25 @@ button:hover {
     font-size: 30px;
     padding: 10px;
 }
+
+footer {
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#github-logo {
+    width: 20px;
+}
+
+#github-link {
+    font-size: 18px;
+    color: #C96868;
+    text-decoration: none;
+}
+
+a:hover {
+    opacity: 90%;
+}
+
