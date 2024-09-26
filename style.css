@@ -1,9 +1,3 @@
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-
 body {
     background-color: #FFF4EA;
     font-family: "Jost", sans-serif;
@@ -20,14 +14,14 @@ header {
 
 .title-back  {
     background-color: #C96868;
-    border-radius: 25px;
-    padding: 10px;
+    border-radius: 1rem;
+    padding: 1rem;
 }
 
 .title {
-    font-size: 40px;
+    font-size: 2.5rem;
     font-weight: 500;
-    color: white;
+    color: #FFF;
     cursor: default;
 }
 
@@ -35,9 +29,9 @@ header {
     opacity: 90%;
 }
 
-.content {
+main {
     height: 70vh;
-    background-color: whitesmoke;
+    background-color: #f5f5f5;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -45,45 +39,45 @@ header {
 }
 
 .desc {
-    margin-top: 30px;
-    padding: 15px;
-    font-size: 20px;
+    margin-top: 2rem;
+    padding: 1rem;
+    font-size: 1.2rem;
     text-align: center;
 }
 
 .buttons {
-    padding: 20px;
+    padding: 1rem;
     display: flex;
     flex-direction: row;
-    gap:10px;
+    gap: 0.5rem;
 }
 
 button {
-    width: 150px;
-    height: 150px;
-    font-size: 100px;
+    width: 9rem;
+    height: 9rem;
+    font-size: 5rem;
     border: 2px solid #C96868;
-    background-color: white;
-    border-radius: 30px;
+    background-color: #ffffff;
+    border-radius: 1.5rem;
 }
 
 button:hover {
     background-color: #C96868;
-    border: 2px solid white;
+    border: 2px solid #ffffff;
     cursor: pointer;
 }
 
 
 #results {
-    padding: 10px;
-    font-size: 20px;
+    padding: 0.5rem;
+    font-size: 1.2rem;
     text-align: center;
 }
 
 #result {
-    margin: 20px;
-    font-size: 30px;
-    padding: 10px;
+    margin: 1rem;
+    font-size: 1.5rem;
+    padding: 1rem;
 }
 
 footer {
@@ -94,11 +88,12 @@ footer {
 }
 
 #github-logo {
-    width: 20px;
+    display: inline;
+    width: 1rem;
 }
 
 #github-link {
-    font-size: 18px;
+    font-size: 1rem;
     color: #C96868;
     text-decoration: none;
 }
